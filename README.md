@@ -1,4 +1,4 @@
-# ⚡ Orochi — Full-Stack Luau Programmer & CS Undergrad
+# ⚡ Orochi — Full-Stack Luau Programmer & CS Grad
 
 Professional Roblox Developer and Luau scripter with over 5 years of experience in engineering high-performance systems, robust backend architectures, and fluid, lag-free gameplay loops.
 
@@ -6,10 +6,10 @@ Professional Roblox Developer and Luau scripter with over 5 years of experience 
 
 ## 🛠️ Technical Skillset & Workflow
 
-* **Languages:** Luau (Advanced), C, HTML/CSS/JavaScript
+* **Languages:** Luau (Advanced), C, C#, C++, HTML/CSS/JavaScript
 * **Tools & Workflow:** Rojo, Wally (Package Manager), VS Code, Git / GitHub
 * **Core Competencies:** OOP (Object-Oriented Programming), State Management, Advanced Hitbox Verification, Custom NPC AI (State Machines), Data Persistence (Datastores), Network Optimization & Replication.
-* **Payment Preference:** USD ($) only.
+* **Payment Preference:** USD ($).
 
 ---
 
@@ -35,10 +35,20 @@ Professional Roblox Developer and Luau scripter with over 5 years of experience 
 * **Technical Focus:** Handled the entire production pipeline. Structured a highly modular codebase to preserve stable server frame rates (60 TPS) even during massive fights with multiple heavy VFX active simultaneously.
 * **Core Features:** Combo interactions, responsive hit feedback, character-based movesets, and high-impact ultimate abilities.
 
+### 👁️ Horror Monster AI
+*Advanced, highly reactive NPC framework built for survival horror scaling across complex environments.*
+* **Technical Focus:** Engineered using Finite State Machines (FSM) paired with `PathfindingService` to create unpredictable, lifelike entity behavior. Features dynamic agro management, line-of-sight tracking, and custom raycasting to break predictive pathing.
+* **Core Behaviors:** Fully coded states including **Stalking** (silent approach from shadows), **Toying** (psychological pressure based on player proximity), **Chasing** (high-velocity threat acquisition), **Wandering** (autonomous territory coverage), and **Idle** state cycles.
+
+### 🔮 Six Seven Hollow Purple (Meme Ultimate Skill)
+*A high-impact, chaotic anime-inspired ultimate ability based on Gojo's signature move, built purely as a high-performance meme system.*
+* **Technical Focus:** Heavy stress-testing project focused on replicating massive VFX and destruction data seamlessly to all clients without dropping server tick rates. Solves the challenge of client-side visual prediction combined with strict server-sided hit validation for massive area-of-effect (AoE) bounds.
+* **Core Features:** Large-scale environment interaction, synchronized particle/sound replication, complex hit registration, and punchy visual-audio timing.
+
 ---
 
 ## 📬 Contact & Portfolios
 
 * **Live Portfolio Website:** [orochidev00.github.io/portfolio](https://orochidev00.github.io/portfolio/)
-* **Roblox Talent Hub:** [profile/orochiz00](https://talent.roblox.com/pt/profile/orochiz00)
+* **Roblox Talent Hub:** [profile/orochiz00](https://talent.roblox.com/pt/profile/orochixz00)
 * **Twitter / X:** [@OrochiDev007](https://x.com/OrochiDev007)
