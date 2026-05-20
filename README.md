@@ -50,5 +50,5 @@ Professional Roblox Developer and Luau scripter with over 5 years of experience 
 ## 📬 Contact & Portfolios
 
 * **Live Portfolio Website:** [orochidev00.github.io/portfolio](https://orochidev00.github.io/portfolio/)
-* **Roblox Talent Hub:** [profile/orochiz00](https://talent.roblox.com/pt/profile/orochixz00)
+* **Roblox Talent Hub:** [profile/orochixz00](https://create.roblox.com/talent/creators/291349970)
 * **Twitter / X:** [@OrochiDev007](https://x.com/OrochiDev007)
