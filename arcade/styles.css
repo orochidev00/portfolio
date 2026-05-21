@@ -58,6 +58,12 @@ body {
 a { color: inherit; text-decoration: none; }
 button { font-family: inherit; cursor: pointer; }
 
+/* Cap main content width on widescreen so the hero / movelist don't sprawl */
+main {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
 /* ===== CRT effects (global) ===== */
 body::before {
   content: "";
