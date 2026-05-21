@@ -44,6 +44,13 @@ html, body {
   overflow-x: hidden;
 }
 
+/* User asked for 125% to feel like the default — scale everything up
+   on big screens via CSS zoom. Capped so it doesn't blow up on already-small
+   viewports (tablets/phones use the responsive media queries instead). */
+@media (min-width: 1280px) {
+  html { zoom: 1.25; }
+}
+
 body {
   min-height: 100vh;
   background:
