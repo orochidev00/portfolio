@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Orochi — Roblox combat, AI &amp; VFX scripter</title>
-<meta name="description" content="Roblox / Luau freelancer. Combat systems, NPC AI, VFX, ragdoll, hitboxes and game architecture. Replies within 24h.">
-<link rel="icon" href="site/img/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="site/img/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="site/img/apple-touch-icon.png">
+<title>Orochi · Roblox scripter</title>
+<meta name="description" content="Roblox freelance scripter. Full games and any system you need: combat, AI, UI, economy, data, VFX. Replies within 24h.">
+<link rel="icon" href="site/img/favicon-32.png?v=2" sizes="32x32" type="image/png">
+<link rel="icon" href="site/img/favicon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="site/img/apple-touch-icon.png?v=2">
 <meta name="theme-color" content="#0f0d0c">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,7 @@
 <div>
 <span class="label">Roblox scripter · Luau · Brazil, UTC−3</span>
 <h1 class="display">Hitboxes that hit.<span>AI that hunts.</span></h1>
-<p class="hero-intro">I'm Orochi. I build <strong>combat systems, NPC AI, VFX, ragdolls and hitboxes</strong> for Roblox games — server-authoritative from the first line, tuned until it feels right in the hand.</p>
+<p class="hero-intro">I'm Orochi. I script <strong>anything a Roblox game needs</strong>: full games from an empty baseplate, combat, NPC AI, UI, shops and economies, DataStores, VFX. Server-authoritative from the first line, tuned until it feels right in the hand.</p>
 <div class="hero-actions"><a class="btn" href="#contact">Start a project</a><a class="btn ghost" href="#work">See the work</a></div>
 <div class="facts">
 <div><b>6 yrs</b><span>writing Luau</span></div>
@@ -39,7 +39,7 @@
 <div><b>&lt;24h</b><span>reply time</span></div>
 </div>
 </div>
-<div class="hero-art"><img src="site/img/ronin.jpg" alt="Orochi — ronin avatar with horned kasa under a red moon"></div>
+<div class="hero-art"><img src="site/img/ronin.jpg" alt="Orochi, ronin avatar with horned kasa under a red moon"></div>
 </div>
 </section>
 
@@ -47,7 +47,7 @@
 <div class="wrap">
 <div class="section-head">
 <div><span class="stroke"></span><h2 class="display">Six systems,<br>shipped.</h2></div>
-<p>Each one starts with a problem a client or player had. Two are open source further down — the rest is client work under NDA, source available on request.</p>
+<p>Each one starts with a problem a client or player had. Two are open source further down. The rest is client work under NDA, source available on request.</p>
 </div>
 
 <article class="case featured">
@@ -62,18 +62,18 @@
 <div class="case-detail">
 <div class="built"><h4 class="label">What I built</h4><ul>
 <li>Five-hit M1 chain, a unique animation per hit, blended so the combo reads as one motion</li>
-<li>Directional knockback from attacker position — <code>ApplyImpulse</code> on the server for NPCs, <code>LinearVelocity</code> on the client for players</li>
+<li>Directional knockback from attacker position: <code>ApplyImpulse</code> on the server for NPCs, <code>LinearVelocity</code> on the client for players</li>
 <li>Knocked-back targets raycast the wall they hit: bounce with reduced velocity, or break it into physics debris</li>
 <li>Jump attack with an airborne hitbox and a ground slam shockwave</li>
 <li>Hit pause on heavies, impact flash and camera shake scaled to hit weight</li>
 <li>Animations reworked in Blender for anticipation and follow-through</li>
 </ul></div>
-<div class="result"><h4 class="label">Result</h4><p>Knockback with no rubber-banding — every body is moved by the machine that owns it. A 6-frame startup keeps the chain responsive.</p></div>
+<div class="result"><h4 class="label">Result</h4><p>Knockback with no rubber-banding. Every body is moved by the machine that owns it. A 6-frame startup keeps the chain responsive.</p></div>
 </div>
 </article>
 
 <article class="case flip">
-<div class="case-head"><span class="case-num">02</span><h3 class="display case-title">Monster AI — Horror</h3><span class="case-meta">2025 · Client commission · AI</span></div>
+<div class="case-head"><span class="case-num">02</span><h3 class="display case-title">Monster AI: Horror</h3><span class="case-meta">2025 · Client commission · AI</span></div>
 <div class="case-grid">
 <div class="media"><div class="video" data-yt="8g1v6xCz8_I" data-title="Monster AI"><img alt=""><button class="play" type="button"><span>▶ Play</span></button></div></div>
 <div class="side">
@@ -83,14 +83,14 @@
 </div>
 <div class="case-detail">
 <div class="built"><h4 class="label">What I built</h4><ul>
-<li>Eight states — idle, patrol, stalk, toying, chase, look-around, jumpscare, return — one handler each in a dispatch table</li>
+<li>Eight states (idle, patrol, stalk, toying, chase, look-around, jumpscare, return), one handler each in a dispatch table</li>
 <li>Two-zone vision: a 95-stud central cone plus a 40-stud peripheral zone, raycast to torso and head</li>
 <li>Hearing grows from 80 to 140 studs when the player sprints, so sneaking actually matters</li>
 <li>Stalk picks spots behind the player. Stare at it for 2 seconds and it charges</li>
 <li>Toying circles out of view and sidesteps if its route would cross the player's sightline</li>
 <li>4 Hz proximity feed to each client for heartbeat audio and vignette</li>
 </ul></div>
-<div class="result"><h4 class="label">Result</h4><p>Behaviour that reads as intent. It remembers where you were for 4 seconds — long enough to hunt, short enough to escape.</p><a href="#source" data-open-file="monster_ai">Read monster_ai.lua →</a></div>
+<div class="result"><h4 class="label">Result</h4><p>Behaviour that reads as intent. It remembers where you were for 4 seconds: long enough to hunt, short enough to escape.</p><a href="#source" data-open-file="monster_ai">Read monster_ai.lua →</a></div>
 </div>
 </article>
 
@@ -106,12 +106,12 @@
 <div class="case-detail">
 <div class="built"><h4 class="label">What I built</h4><ul>
 <li>Server-authoritative combo chain: jab, straight, hooks, finisher</li>
-<li>Hitboxes through <code>GetPartBoundsInBox</code> — one spatial query per swing</li>
+<li>Hitboxes through <code>GetPartBoundsInBox</code>, one spatial query per swing</li>
 <li>Parry, guard and stun states</li>
 <li>Ragdoll: the server swaps joints, the client sets <code>HumanoidState</code></li>
 <li>Enemy brain as a dispatch table on CollectionService tags, <code>AlignOrientation</code> for turning, GoodSignal for events</li>
 </ul></div>
-<div class="result"><h4 class="label">Result</h4><p>Ragdolls replicate without jitter. Server owns rig state, clients own their movement — new enemy types plug in without touching the core.</p></div>
+<div class="result"><h4 class="label">Result</h4><p>Ragdolls replicate without jitter. Server owns rig state, clients own their movement. New enemy types plug in without touching the core.</p></div>
 </div>
 </article>
 
@@ -180,7 +180,7 @@
 <li><blockquote>“Very straight forward and got the work done.”</blockquote><cite>@zerokazi</cite></li>
 <li><blockquote>“Great work, got everything done quickly.”</blockquote><cite>@jacks96</cite></li>
 <li><blockquote>“Delivered above the brief. Will hire again.”</blockquote><cite>@client_pv</cite></li>
-<li><blockquote lang="pt">“Valor bom e justo, Henry muito gente boa.”</blockquote><cite>@ufogames_ <i>— fair price, great guy to work with</i></cite></li>
+<li><blockquote lang="pt">“Valor bom e justo, Henry muito gente boa.”</blockquote><cite>@ufogames_ <i>(fair price, great guy to work with)</i></cite></li>
 </ul>
 </div>
 </section>
@@ -189,7 +189,7 @@
 <div class="wrap">
 <div class="section-head">
 <div><span class="stroke"></span><h2 class="display">Pricing</h2></div>
-<p>Scripting only. Animation and VFX assets are quoted per asset — ask for a combined quote.</p>
+<p>Scripting only. Animation and VFX assets are quoted per asset. Ask for a combined quote.</p>
 </div>
 <div class="price-group"><span class="label">Systems</span>
 <div class="price-row"><h3>Simple</h3><p>Small mechanics and single-purpose scripts.<i>Currency, leaderboard, basic shop</i></p><span class="usd">$20 – $100</span><span class="rbx">5k – 25k R$</span></div>
@@ -203,7 +203,7 @@
 </div>
 <div class="price-notes">
 <p><strong>Payment:</strong> Wise (preferred, best rates), PayPal, or Robux case by case with a 5,000 R$ minimum.</p>
-<p><strong>Not sure where you fit?</strong> Send the scope and I'll put it in a tier — the quote is free.</p>
+<p><strong>Not sure where you fit?</strong> Send the scope and I'll put it in a tier. The quote is free.</p>
 </div>
 </div>
 </section>
@@ -223,7 +223,7 @@
 <div class="about-img"><img src="site/img/ronin.jpg" alt=""></div>
 <div class="about-body">
 <h3>About</h3>
-<p>Roblox scripter from Brazil, six years in Luau. I work on the systems where feel and networking have to be right at the same time: combat, AI, physics, VFX. I work solo and talk to you directly — no middleman.</p>
+<p>Roblox scripter from Brazil, six years in Luau. I build whatever the game needs, from a single mechanic to the whole thing: gameplay, AI, UI, economy, saving, VFX. I work solo and talk to you directly, no middleman.</p>
 <div class="clock"><span>São Paulo · UTC−3</span><span>Now <b data-clock>--:--</b></span></div>
 </div>
 </aside>
