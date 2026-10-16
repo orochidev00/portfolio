@@ -1,54 +1,56 @@
-# ⚡ Orochi — Full-Stack Luau Programmer & CS Grad
+# Orochi — Luau Programmer & CS Grad
 
-Professional Roblox Developer and Luau scripter with over 5 years of experience in engineering high-performance systems, robust backend architectures, and fluid, lag-free gameplay loops.
+Roblox scripter with 6+ years of Luau. I build combat that lands, enemies that think, and full games from an empty baseplate. Everything that matters runs on the server, so exploiters get nothing.
 
----
+**[Portfolio](https://orochidev00.github.io/portfolio/)** · **Discord:** `@oroch1n` · **[X](https://x.com/OrochiDev007)**
 
-## 🛠️ Technical Skillset & Workflow
+## Skills
 
-* **Languages:** Luau (Advanced), C, C#, C++, HTML/CSS/JavaScript
-* **Tools & Workflow:** Rojo, Wally (Package Manager), VS Code, Git / GitHub
-* **Core Competencies:** OOP (Object-Oriented Programming), State Management, Advanced Hitbox Verification, Custom NPC AI (State Machines), Data Persistence (Datastores), Network Optimization & Replication.
-* **Payment Preference:** USD ($).
+- **Languages:** Luau (advanced), C, C++, C#, HTML/CSS/JavaScript
+- **Workflow:** Rojo, Wally, VS Code, Git/GitHub
+- **Focus:** OOP, state machines, NPC AI, server-side hit validation, DataStores, replication and network optimization
 
----
+## Featured work
 
-## 🚀 Featured Projects
+### Deepwoken Combat & Ulquiorra AI
+A melee prototype with a boss that fights back.
+- 4-hit M1 chain, parries and directional blocking
+- Boss AI runs on a state machine, using `PathfindingService` for positioning, parry trades and adaptive aggression
+- Hits are validated on the server, while feedback plays on the client, so it feels instant
 
-### 🌟 Deepwoken Combat & Ulquiorra AI
-*High-fidelity combat prototype showcasing complex Boss AI and fluid melee mechanics.*
-* **Technical Focus:** State-machine driven NPC behavior utilizing `PathfindingService` for smart positioning, dynamic parry trading, and defensive reactions. Implements server-sided hit validation for robust exploit prevention and client-sided visual feedback for zero-latency feel.
-* **Core Features:** 4-hit M1 combo chain, parry-based combat, directional blocking, and adaptive aggression logic.
+### El Thor
+Enel's El Thor from One Piece. **[Full source on my portfolio](https://orochidev00.github.io/portfolio/#src-elthor)**
+- The client renders every effect. The server only checks range, line of sight and cooldown, then applies damage
+- Custom ragdoll, with NPC knockback simulated on the attacker's client so it never rubber-bands
+- Modular, so it drops straight into a bigger combat framework
 
-### ⚡ El Thor Lightning Skill
-*A stylized lightning ability inspired by Enel's "El Thor" from One Piece, focused on cinematic impact without sacrificing technical reliability.*
-* **Technical Focus:** Built to optimize replication and network bandwidth. Specialized in tightly syncing heavy visual effects, hit detection, ragdoll timing, and knockback forces seamlessly between the server and multiple clients.
-* **Core Features:** Server-sided hitbox validation, custom ragdoll integration, and responsive, modular code easily scalable into larger combat frameworks.
+### Steal an Egg
+A brainrot-style collection game built around a live conveyor.
+- Trait and mutation rolls, with rarity-based value scaling
+- Backend built to stay fast with lots of players and entities on screen
+- Live conveyor spawning, clean multiplayer sync and lightweight UI state
 
-### 🥚 Steal an Egg
-*A fast-paced brainrot-style economy and collection game built around a live conveyor system.*
-* **Technical Focus:** Backend engine designed for high performance under high player and entity counts. Efficiently handles randomized trait rolling, mutation assignments, real-time value calculation, and strict UI state optimization.
-* **Core Features:** Trait & mutation generation, rarity-based value scaling, live conveyor spawning, and clean multiplayer synchronization.
+### Brainrot Clash Arena
+A battlegrounds-style game with character movesets. I handled the whole production pipeline.
+- Combo interactions, hit feedback, character movesets and ultimates
+- Modular codebase that holds 60 TPS in big fights with heavy VFX on screen
 
-### 🏟️ Brainrot Clash Arena
-*A chaotic battlegrounds-style game built around stylized character movesets and rapid ability interactions.*
-* **Technical Focus:** Handled the entire production pipeline. Structured a highly modular codebase to preserve stable server frame rates (60 TPS) even during massive fights with multiple heavy VFX active simultaneously.
-* **Core Features:** Combo interactions, responsive hit feedback, character-based movesets, and high-impact ultimate abilities.
+### Horror Monster AI
+A survival-horror enemy that feels alive.
+- Finite state machine: Idle, Wandering, Stalking, Toying and Chasing
+- `PathfindingService` plus custom raycasts for line of sight, so its pathing is hard to predict
+- Toying reads player proximity to build pressure before the chase
 
-### 👁️ Horror Monster AI
-*Advanced, highly reactive NPC framework built for survival horror scaling across complex environments.*
-* **Technical Focus:** Engineered using Finite State Machines (FSM) paired with `PathfindingService` to create unpredictable, lifelike entity behavior. Features dynamic agro management, line-of-sight tracking, and custom raycasting to break predictive pathing.
-* **Core Behaviors:** Fully coded states including **Stalking** (silent approach from shadows), **Toying** (psychological pressure based on player proximity), **Chasing** (high-velocity threat acquisition), **Wandering** (autonomous territory coverage), and **Idle** state cycles.
+### Six Seven Hollow Purple
+A meme take on Gojo's Hollow Purple, built as a stress test.
+- Massive VFX and destruction replicated to every client without dropping the server tick rate
+- Client-side visual prediction with strict server-side validation for a huge AoE
+- Particles and sound stay in sync, with punchy timing
 
-### 🔮 Six Seven Hollow Purple (Meme Ultimate Skill)
-*A high-impact, chaotic anime-inspired ultimate ability based on Gojo's signature move, built purely as a high-performance meme system.*
-* **Technical Focus:** Heavy stress-testing project focused on replicating massive VFX and destruction data seamlessly to all clients without dropping server tick rates. Solves the challenge of client-side visual prediction combined with strict server-sided hit validation for massive area-of-effect (AoE) bounds.
-* **Core Features:** Large-scale environment interaction, synchronized particle/sound replication, complex hit registration, and punchy visual-audio timing.
+## Contact
 
----
-
-## 📬 Contact & Portfolios
-
-* **Live Portfolio Website:** [orochidev00.github.io/portfolio](https://orochidev00.github.io/portfolio/)
-* **Roblox Talent Hub:** [profile/orochixz00](https://create.roblox.com/talent/creators/291349970)
-* **Twitter / X:** [@OrochiDev007](https://x.com/OrochiDev007)
+- **Portfolio:** [orochidev00.github.io/portfolio](https://orochidev00.github.io/portfolio/)
+- **Discord:** `@oroch1n`
+- **Roblox Talent Hub:** [orochixz00](https://create.roblox.com/talent/creators/291349970)
+- **X:** [@OrochiDev007](https://x.com/OrochiDev007)
+- **Payment:** USD via Wise or PayPal
